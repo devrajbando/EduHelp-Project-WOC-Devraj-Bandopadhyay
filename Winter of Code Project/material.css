@@ -1,0 +1,55 @@
+#years{
+    display: flex;
+}
+
+h1{margin-top: 5%;
+    text-align: center;
+    font-size: xxx-large;
+}
+
+.years:hover{
+    cursor: pointer;
+}
+.dropdown
+{position: relative;
+    display: inline-block;
+    margin: auto;
+    margin-top: 7%;
+    background-color: #57b7eb;
+    font-size: xx-large;
+    padding: 3%;    
+
+}
+
+.dropdown-content
+{position: absolute;
+    display: none;
+    z-index: 1;
+    font-size: x-large;
+    /* padding: 45px 30px; */
+    min-width:max-content;
+    width: 100%;
+    
+    
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+    cursor: pointer;
+    
+}
+.dropdown:hover{
+    cursor: default;
+}
+.dropdown-content a{
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    background-color: #f76c6c;
+     position: relative;    
+    right:46px;
+    top:45px;
+    width: 90.5%;
+}
+.dropdown-content a:hover{
+background-color: #ec3f3f;
+}
