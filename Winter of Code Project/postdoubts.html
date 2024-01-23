@@ -4,11 +4,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Devraj Bandopadhyay">
-        <title>Doubts-EduHelp Forum</title>
+        <title>Post Doubts-EduHelp Forum</title>
         <link rel="stylesheet" href="styles.css">
         <link id="fav" rel="icon" type="image/x-icon" href="eduhelp favicon 3.png">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <script src="https://kit.fontawesome.com/7060762e37.js" crossorigin="anonymous"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/@tinymce/tinymce-webcomponent@2/dist/tinymce-webcomponent.min.js"></script>
+        <script src="https://cdn.tiny.cloud/1/cgfiqno5dnwq27i97wrziky2kz9qthxhkczyyk8mhoidhcgo/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script> -->
     </head>
     <body>
         <!-- 25)vibrant and elegant -->
@@ -24,70 +26,70 @@
                 <li style="border-bottom-right-radius: 25px; border-top-right-radius:25px ; padding-right: 17px;"><a href="contact.html">contact</a></li>
             </ul>
             
-            <div id="nameofuser">egname</div>
+            <div id="nameofuser"></div>
         </div>
         <div id="preDoubts" style="text-align: center; margin: auto;">
-            <h1>Welcome to Doubts</h1>
+            <h1>welcome to doubts</h1>
             <p>you can upload your doubts, and your fellow batchmates or seniors can solve them</p>
-            <button id="askDoubt">Ask doubt</button>
+            <button id="otherDoubt">see other's doubts</button>
         </div>
-        <div id="doubtsSection">
+        
+           <div id="doubtSection">
+                <textarea id="writeDoubt">
+                ask your doubt here
+            </textarea><br><br>
+            <button id="postDoubt">post doubt</button>
         </div>
+   
     </body>
     <style>
-        #doubtsSection{
-            margin-top:50px;
+        #doubtSection{
+            border-radius: 25px;;
+            width:80%;
+            margin:auto;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            background-image: url("BACKGROUND.png");
+            background-size: 500px;
+            display: block;
         }
         button{
             border-radius: 25px;
             padding:0.7%;
-            background-color:#374785;
+            background-color: #57b7eb;
             color: antiquewhite;
         }
         button:hover{
             cursor: pointer;
-            background-color: #57b7eb;
+            background-color: #374785;
         }
-        .doubts{
-            background-color:  #cc5d5d;
-            padding: 1%;
+        /* #writeArea{
+            margin:50px;
+            /* margin-top:20px; */
+        /* } */ 
+        textarea {
+            margin: 120px;
+            margin-top: 50px;
+            margin-left:35px;
+            margin-bottom: 10px;
+            height:500px;
+            width: 1150px; 
             border-radius: 25px;
-            width:80%;
-            margin: auto;
-            /* margin-top: 20px; */
+            background-color: #f76c6c;
+            font-size: large;
+            color: #ffffff;
         }
-        .answerBtns{
-            width:7%;
-            margin-left:84%;
-            margin-top: 0.5%;
-        }
-        .ansText{
-            position: relative;
-            bottom:50px;
-            font-size: medium;
-            text-indent: 2%;
-            width:80%;
-        }
-        .postAns{
-            position: relative;
-            bottom:50px;
-        }
-        .answers{
-            margin-top: 10px;
-            background-color: #57b7eb;
-            padding: 0.75%;
-            font-size: small;
-            border-radius: 25px;
-            width:71.5%;
-        margin-left: 18%;
+        #postDoubt{
+            margin-left: 550px;
+            margin-bottom: 30px;
         }
     </style>
-    <script src="doubts.js" type="module"></script>
+
     <script> 
-        const btn=document.getElementById("askDoubt");
-        btn.addEventListener("click", function(){
-            window.location.href="postdoubts.html";
-        })
-        </script>
-        
+    const btn=document.getElementById("otherDoubt");
+    btn.addEventListener("click", function(){
+        window.location.href="doubts.html";
+    })
+    </script>
+    <script src="postdoubts.js" type="module"></script>
 </html>

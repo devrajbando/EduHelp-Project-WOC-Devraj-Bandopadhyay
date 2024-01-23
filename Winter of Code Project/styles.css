@@ -1,6 +1,10 @@
-body{font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+body{
     background-color: #24305e;
     color: #ffffff;
+}
+*{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 body::-webkit-scrollbar
 {
@@ -21,14 +25,14 @@ body::-webkit-scrollbar
 #navbar {
     font-size: large;
     
-    margin:20px 150px;
-    
+    margin: 0px 150px;
+    margin-bottom: 20px;;
 display:flex;
 align-items:center ;
 position: sticky;
-top: 10px;
-z-index: 2;
-background-color: #24305e;
+top:-5px;
+z-index: 4;
+background-color:#24305e;
 border-radius: 25px;
 }
 #navbar ul{
@@ -60,7 +64,8 @@ opacity:1
   
 }
 #nameofuser{
-    margin-left:250px;
+    width:100%;
+    margin-left:220px;
     position: relative;
   display: inline-block;
 }
@@ -294,14 +299,59 @@ margin:0px 20px;
      width: 1420px; background-color: #F76C6C;
     border-radius: 25px;
 }
-.fas{
+
+#leftarrow {visibility: hidden;
+    cursor: pointer;
     position: relative;
     top:130px;
     font-size:50px;
-}
-#leftarrow {visibility: hidden;
-    cursor: pointer;
+    z-index: 1;
 }
 #rightarrow{
     cursor: pointer;
+    position: relative;
+    top:130px;
+    font-size:50px;
+    z-index: 1;
+}
+#blogeditor{
+    margin-left:160px;
+    /* width:1000px; */
+}
+#textblog{
+    text-align: center;
+}
+#blogpost{
+
+    margin-left:575px;
+    margin-top: 20px;
+    font-size: large;
+    background-color: #f76c6c;
+    border-radius: 15px;
+    padding: 10px;
+}
+#blogpost:hover{
+    background-color: #cf4242;
+    cursor: pointer;
+}
+span{
+    position: relative;
+    bottom:10px;
+}
+#fileList{
+    margin-left:100px;
+}
+#fileList a{
+    /* margin-top:10px; */
+    
+    border-radius:25px;
+    padding:10px;
+    background-color: #F76C6C;
+}
+#fileList a:hover{
+    background-color: #e03e3e;
+}
+  
+#blogs{
+    border-radius: 25px;
 }

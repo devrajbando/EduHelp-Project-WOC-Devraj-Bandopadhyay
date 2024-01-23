@@ -15,7 +15,13 @@ h1{background-color: #24305e;
     border-radius: 25px;
     
 }
-form{background-color: #374785;
+#wholeform{background-color: #374785;
+    border-radius: 25px;
+    max-width: 600px;
+    margin: auto;
+}
+#loginform{
+    background-color: #374785;
     border-radius: 25px;
     max-width: 600px;
     margin: auto;
@@ -56,4 +62,28 @@ label{margin-left: 50px;
 #SubmitInfo:hover{
     background-color:#24305e;
     cursor: pointer;
+}
+#loginbtn{
+    background-color: #57b7e5;
+    color: white;
+    padding: 2%;
+    margin-left: 270px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    height: auto;
+    font-weight: bold;
+}
+#loginbtn:hover{
+    background-color:#24305e;
+    cursor: pointer;
+}
+#BranchOfUser1
+{
+    border: 2px;
+    border-radius: 10px;
+    padding: 2%;
+    font-weight: bold;
+    height: 30px;
+    width:80%;
+    float: left;
 }

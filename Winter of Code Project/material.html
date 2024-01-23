@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Devraj Bandopadhyay">
-        <title>EduHelp Forum-A Collaborative College Community</title>
+        <title>Material-EduHelp Forum</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="material.css">
         <link id="fav" rel="icon" type="image/x-icon" href="eduhelp favicon 3.png">
@@ -17,7 +17,7 @@
         <!-- 25)vibrant and elegant -->
         <!-- 57b7eb instead of a8d0e6 -->
         <div id="navbar">
-            <a href="index.html"><img src="eduhelp logo 11.png" alt="EduHelp Forum" id="logo" style="margin-left: 20px;"></a>
+            <a href="home.html"><img src="eduhelp logo 11.png" alt="EduHelp Forum" id="logo" style="margin-left: 20px;"></a>
             <ul id="nav" style="margin-left: 200px;list-style-type: none;">
                 
                 <li style="border-bottom-left-radius: 25px; border-top-left-radius:25px ; padding-left: 17px;"><a href="about.html">about</a></li>
@@ -27,15 +27,57 @@
                 <li style="border-bottom-right-radius: 25px; border-top-right-radius:25px ; padding-right: 17px;"><a href="contact.html">contact</a></li>
             </ul>
             
-            <!-- <div id="nameofuser">egname</div> -->
+            <div id="nameofuser"></div>
         </div>
-        <h1 id="yearselect">select year</h1>
-            <div id="years">
-                <div class="dropdown">1st Year<div class="dropdown-content"><a style="text-align: center;" href="#">upload material</a><a style="text-align: center;" href="#">fetch material</a></div></div>
-                <div class="dropdown">2nd Year<div class="dropdown-content"><a style="text-align: center;" href="#">upload material</a><a style="text-align: center;" href="#">fetch material</a></div></div></li>
-                <div class="dropdown">3rd Year<div class="dropdown-content"><a style="text-align: center;" href="#">upload material</a><a style="text-align: center;" href="#">fetch material</a></div></div></li>
-                <div class="dropdown">4th Year<div class="dropdown-content"><a style="text-align: center;" href="#">upload material</a><a style="text-align: center;" href="#">fetch material</a></div></div></li>
-                <div class="dropdown">5th Year<div class="dropdown-content"><a style="text-align: center;" href="#">upload material</a><a style="text-align: center;" href="#">fetch material</a></div></div></li>
+
+        <div id="upnfetch" style="display:flex">
+            <div class ="material" id="uploadmat" style="display:block">
+                <img src="uploadmat.png">
+                <div>upload material</div>
+                <div id="yearsub1">
+                <div class="yearsub">
+                    <select id="upload_years" class="years">
+                    <!-- <option value="def" default>select year</option> -->
+                    <option value="1" id="year1">first year</option>
+                    <option value="2" id="year2">second year</option>
+                    <option value="3" id="year3">third year</option>
+                    <option value="4" id="year4">fourth year</option>
+                    <option value="5" id="year5">fifth year</option>
+                </select>
+                <div id=uploadoption class="option"><i class="fas fa-cloud-upload-alt"></i><span>upload</span><br>
+                </div>
             </div>
+            <form style="display: none;" id="uploadingfile">
+            <label for="upfile">upload material</label>
+            <input type="file" id="upfile" single><br>
+            <label for="nameoffile">name the file</label>
+            <input type="text" id="nameoffile"><br>
+            <button id="submitfile" type="submit">submit</button><br>
+            </form>
+        </div>
+        </div>
+
+
+        
+            <div class ="material" id="fetchmat" style="display:block">
+                <img src="fetchmat.png">
+                <div>fetch material</div>
+                <div class="yearsub">
+              
+                    <select id="yearsfetch" class="years" type="text">
+                    <option value="1">first year</option>
+                    <option value="2">second year</option>
+                    <option value="3">third year</option>
+                    <option value="4">fourth year</option>
+                    <option value="5">fifth year</option>
+                </select>
+                <div id=fetch_option class="option"><i class="fas fa-cloud-download-alt"></i><span>download</span></div>
+            </div>
+            </div>
+        </div>
+ 
+        <script src="upload.js" type="module"></script>
+        <script src="material.js" type="module"></script>
+        <!-- <script src="fetch.js" type="module"></script> -->
     </body>
 </html>

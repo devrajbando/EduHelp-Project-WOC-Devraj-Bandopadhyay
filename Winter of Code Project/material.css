@@ -1,55 +1,84 @@
-#years{
-    display: flex;
-}
-
-h1{margin-top: 5%;
-    text-align: center;
-    font-size: xxx-large;
-}
-
-.years:hover{
-    cursor: pointer;
-}
-.dropdown
-{position: relative;
-    display: inline-block;
+#upnfetch{
+    height:600px;
+    border-radius: 25px;
+    width:1400px;
     margin: auto;
-    margin-top: 7%;
-    background-color: #57b7eb;
-    font-size: xx-large;
-    padding: 3%;    
-
+    margin-top: 20px;
+    background-image:url("BACKGROUND.png");
+    background-size: 400px;
+    text-align: center;
 }
-
-.dropdown-content
-{position: absolute;
-    display: none;
-    z-index: 1;
-    font-size: x-large;
-    /* padding: 45px 30px; */
-    min-width:max-content;
-    width: 100%;
-    
-    
-}
-.dropdown:hover .dropdown-content{
-    display: block;
-    cursor: pointer;
-    
-}
-.dropdown:hover{
-    cursor: default;
-}
-.dropdown-content a{
-    text-decoration: none;
-    display: block;
-    padding: 10px;
+.material
+{
+    font-size: xxx-large;
+    padding:30px;
     background-color: #f76c6c;
-     position: relative;    
-    right:46px;
-    top:45px;
-    width: 90.5%;
+    margin: auto;
+    border-radius: 25px;
 }
-.dropdown-content a:hover{
-background-color: #ec3f3f;
+select{
+    position: relative;
+    bottom:10px;
+    text-align: left;
+    border-radius: 25px;
+    padding:15px;
+    /* padding-right:  */
+    margin-left:80px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;
+    background-color: #ffe667;
+}
+i{position: relative;
+    top:2px;
+    padding: 10px;
+    margin-left: 20px;
+    /* text-transform: lowercase; */
+}
+span{
+    font-size:large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.yearsub{
+    color: #ffe667;
+}
+.yearsub:hover{
+  cursor: pointer;
+}
+option{
+    text-align: left;
+    font-size: medium;
+    border-radius: 25px;
+    background-color: #ffffff;
+}
+.option{
+    display: inline;
+}
+label{background-color: #ffe667;
+    color: black;
+    width:40%;
+    border-radius: 25px;
+    padding: 3%;
+    font-size: medium;
+}
+input{
+    border-radius: 25px;
+    padding: 1%;
+    width:50%;
+}
+button{
+    margin:auto;
+background-color:#57b7eb;
+color: rgb(255, 255, 255);
+text-align: center;
+padding: 10px;
+border-radius: 25px;
+}
+button:hover {
+background-color: #374785;
+cursor: pointer;
+}
+#uploadingfile{
+    /* background-color: #cf3838; */
+    border-radius: 25px;
+    padding: 1%;
+    /* transition: display 2s; */
 }
