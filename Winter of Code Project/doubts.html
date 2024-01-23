@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Devraj Bandopadhyay">
+        <title>Doubts-EduHelp Forum</title>
+        <link rel="stylesheet" href="styles.css">
+        <link id="fav" rel="icon" type="image/x-icon" href="eduhelp favicon 3.png">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script src="https://kit.fontawesome.com/7060762e37.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- 25)vibrant and elegant -->
+        <!-- 57b7eb instead of a8d0e6 -->
+        <div id="navbar">
+            <a href="index.html"><img src="eduhelp logo 11.png" alt="EduHelp Forum" id="logo" style="margin-left: 20px;"></a>
+            <ul id="nav" style="margin-left: 200px;list-style-type: none;">
+                
+                <li style="border-bottom-left-radius: 25px; border-top-left-radius:25px ; padding-left: 17px;"><a href="about.html">about</a></li>
+                <li><a href="material.html">materials</a></li>
+                <li><a href="doubts.html">doubts</a></li>
+                <li><a href="posts.html">posts</a></li>
+                <li style="border-bottom-right-radius: 25px; border-top-right-radius:25px ; padding-right: 17px;"><a href="contact.html">contact</a></li>
+            </ul>
+            
+            <div id="nameofuser">egname</div>
+        </div>
+        <div id="preDoubts" style="text-align: center; margin: auto;">
+            <h1>Welcome to Doubts</h1>
+            <p>you can upload your doubts, and your fellow batchmates or seniors can solve them</p>
+            <button id="askDoubt">Ask doubt</button>
+        </div>
+        <div id="doubtsSection">
+        </div>
+    </body>
+    <style>
+        #doubtsSection{
+            margin-top:50px;
+        }
+        button{
+            border-radius: 25px;
+            padding:0.7%;
+            background-color:#374785;
+            color: antiquewhite;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: #57b7eb;
+        }
+        .doubts{
+            background-color:  #cc5d5d;
+            padding: 1%;
+            border-radius: 25px;
+            width:80%;
+            margin: auto;
+            /* margin-top: 20px; */
+        }
+        .answerBtns{
+            width:7%;
+            margin-left:84%;
+            margin-top: 0.5%;
+        }
+        .ansText{
+            position: relative;
+            bottom:50px;
+            font-size: medium;
+            text-indent: 2%;
+            width:80%;
+        }
+        .postAns{
+            position: relative;
+            bottom:50px;
+        }
+        .answers{
+            margin-top: 10px;
+            background-color: #57b7eb;
+            padding: 0.75%;
+            font-size: small;
+            border-radius: 25px;
+            width:71.5%;
+        margin-left: 18%;
+        }
+    </style>
+    <script src="doubts.js" type="module"></script>
+    <script> 
+        const btn=document.getElementById("askDoubt");
+        btn.addEventListener("click", function(){
+            window.location.href="postdoubts.html";
+        })
+        </script>
+        
+</html>

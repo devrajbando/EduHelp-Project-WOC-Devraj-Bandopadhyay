@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Devraj Bandopadhyay">
+        <title>Sign-Up to EduHelp</title>
+        <link rel="stylesheet" href="signup.css">
+        <link id="fav" rel="icon" type="image/x-icon" href="eduhelp favicon 3.png">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script src="https://kit.fontawesome.com/7060762e37.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <h1 id="Signintitle" style="text-align: center;">sign-up to <b id="edu" style="color:#F76C6C">edu</b><b id="help" style="color:#57b7eb">help</b></h1>
+        <div id="wholeform"><form id="signupform">
+            <div class="SignInElements" id="NameOfUser"><div class="labels"><label for="NameOfUser1">name:</label></div>
+             <div class="inputs"><input type="text" id="NameOfUser1" placeholder="Full Name"></div></div><br>
+             <div class="SignInElements" id="BranchOfUser"><div class="labels"><label for="BranchOfUser1">branch:</label></div>
+             <div class="inputs">
+                <select type="text" id="BranchOfUser1">
+                <option value="select branch" selected>select branch</option>
+            <option value="Applied Geology">Applied Geology</option>
+            <option value="Applied Geophysics">Applied Geophysics</option>
+            <option value="Chemical Engineering">Chemical Engineering</option>
+            <option value="Civil Engineering">Civil Engineering</option>
+            <option value="Computer Science & Engineering">Computer Science & Engineering</option>
+            <option value="Electrical Engineering">Electrical Engineering</option>
+            <option value="Electronics and Communication Engineering">Electronics and Communication Engineering</option>
+            <option value="Engineering Physics">Engineering Physics</option>
+            <option value="Environmental Engineering">Environmental Engineering</option>
+            <option value="Mathematics & Computing">Mathematics & Computing</option>
+            <option value="Mechanical Engineering">Mechanical Engineering</option>
+            <option value="Mineral and Metallurgical Engineering">Mineral and Metallurgical Engineering</option>
+            <option value="Mining Engineering">Mining Engineering</option>
+            <option value="Mining Machinery Engineering">Mining Machinery Engineering</option>
+            <option value="Petroleum Engineering">Petroleum Engineering</option>
+            </select>
+            </div></div><br>
+            <div class="SignInElements" id="EmailOfUser"><div class="labels"><label for="EmailOfUser1">email:</label></div>
+             <div class="inputs"><input type="email" id="EmailOfUser1" placeholder="IIT(ISM) email id only"></div></div><br>
+            <div class="SignInElements" id="PasswordOfUser"><div class="labels"><label for="PasswordOfUser1">password:</label></div>
+             <div class="inputs"><input type="password" id="PasswordOfUser1" placeholder="Minimum 6 characters"></div></div><br>
+            <div class="SignInElements" id="ConfirmPasswordOfUser"><div class="labels"><label for="ConfirmPasswordOfUser1">confirm password:</label></div>
+             <div class="inputs"><input type="password" id="ConfirmPasswordOfUser1" placeholder="Same as Password"></div></div><br>
+            <input type="submit"  id="SubmitInfo" value="submit">
+        </form>
+        <a href="login.html"><button id="loginbtn">log-in</button></a></div>
+    </body>
+    <script src="signup.js" type="module"></script>
+    
+</html>
