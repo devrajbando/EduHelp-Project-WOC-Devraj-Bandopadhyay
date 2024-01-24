@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Devraj Bandopadhyay">
+        <title>Post Blogs-EduHelp Forum</title>
+        <link rel="stylesheet" href="styles.css">
+        <link id="fav" rel="icon" type="image/x-icon" href="eduhelp favicon 3.png">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script src="https://kit.fontawesome.com/7060762e37.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.tiny.cloud/1/cgfiqno5dnwq27i97wrziky2kz9qthxhkczyyk8mhoidhcgo/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tinymce/tinymce-webcomponent@2/dist/tinymce-webcomponent.min.js"></script>   
+    </head>
+    <body>
+        <!--#8EE4AF #EDF5E1 #5CDB95 #907163 #379683--> 
+        <!-- #242582 #553D67 #F64C72 #99738E #2F2FA2 -->
+        <!-- 25)vibrant and elegant -->
+        <!-- 57b7eb instead of a8d0e6 -->
+        <div id="navbar">
+            <a href="home.html"><img src="eduhelp logo 11.png" alt="EduHelp Forum" id="logo" style="margin-left: 20px;"></a>
+            <ul id="nav" style="margin-left: 200px;list-style-type: none;">
+                
+                
+                <li style="border-bottom-left-radius: 25px; border-top-left-radius:25px ; padding-left: 17px;"><a href="material.html">materials</a></li>
+                <li><a href="doubts.html">doubts</a></li>
+                <li style="border-bottom-right-radius: 25px; border-top-right-radius:25px ; padding-right: 17px;"><a href="posts.html">posts</a></li>
+               
+            </ul>
+            
+            <div id="nameofuser" ></div>
+            <div id="signout" style="display: flex; "><i id="logouticon" class="material-icons">exit_to_app</i><span id="logouttext" style="position: relative; top:1%; right:2%;">logout</span></div>
+        </div>
+        <!-- <p>This is posts</p> -->
+         <!-- <tinymce-editor
+        api-key=""
+        height="500"
+        menubar="false"
+        
+       
+          bullist numlist outdent indent | removeformat | help"
+        content_style="body
+        {
+          font-family:Helvetica,Arial,sans-serif;
+          font-size:14px
+        }"
+        > -->
+  
+        <!-- Adding some initial editor content -->
+       <div id="textblog"> <h1>welcome to posts</h1>
+        <p>write blogs to tell everyone about your academic story.thank your friends and seniors who helped you in your journey.</p>
+       </div>
+      <!-- </tinymce-editor> -->
+        <!-- <tinymce-editor id="blogs"
+        api-key="cgfiqno5dnwq27i97wrziky2kz9qthxhkczyyk8mhoidhcgo"
+      ></tinymce-editor> -->
+      <form id="blogeditor">
+        <textarea id="blogs"></textarea>
+        <button id="blogpost">post</button></form>
+        <!-- <p id="cont"></p> -->
+        <!-- <textarea>hello</textarea> -->
+    </body>
+    
+    <script src="postblogs.js" type="module"></script>
+</html>
