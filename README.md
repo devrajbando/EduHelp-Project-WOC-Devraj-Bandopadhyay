@@ -12,25 +12,6 @@ EduHelp is a collaborative platform designed for college students to share and a
   - JavaScript
   - Firebase (Authentication, Firestore, Storage)
 
-## Getting Started
-### Prerequisites
-- A modern web browser
-- Firebase project setup with Firestore and Storage enabled
-
-### Installation
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/yourusername/EduHelp.git
-   ```
-2. Navigate to the project folder:
-   ```sh
-   cd EduHelp
-   ```
-3. Open `index.html` in a browser or use Live Server for local development.
-4. Configure Firebase:
-   - Create a Firebase project at [Firebase Console](https://console.firebase.google.com/)
-   - Enable Firestore, Authentication, and Storage.
-   - Copy your Firebase configuration and replace it in `firebase-config.js`.
 
 ## Usage
 - **Sign up/Login**: Users need to register using email authentication.
